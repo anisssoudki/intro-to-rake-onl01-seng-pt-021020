@@ -11,7 +11,8 @@ task :hola do
   end
 end
 
-task :console do 
+task :console => :environment do 
+  Pry.start
 end
   
 namespace :db do 

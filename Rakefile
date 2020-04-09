@@ -11,11 +11,11 @@ task :hola do
   end
 end
 
-desc 'drop into pry'
-task :console => :environment do 
+desc 'drop into the Pry console'
+task :console => :environment do
   Pry.start
 end
-  
+
 namespace :db do 
   task :environment do 
     require_relative './config/environment'

@@ -10,7 +10,7 @@ task :hola do
   puts "hola de Rake!"
   end
 end
-
+namesapce :pry
 desc 'drop into the Pry console'
 task :console => :environment do
   Pry.start
